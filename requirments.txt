@@ -1,0 +1,4 @@
+# Uses python 3, python 2 will not work
+
+selenium (python)
+chromedriver
