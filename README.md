@@ -1,5 +1,5 @@
 # autoRepl - a powerful stress testing tool
-autoRepl uses [https://repl.it]repl.it to create a powerful stress testing without affecting the internal network
+autoRepl uses [repl.it](https://repl.it) to create a powerful stress testing without affecting the internal network
 
 # How to use
  - Fork this repo
@@ -9,4 +9,4 @@ autoRepl uses [https://repl.it]repl.it to create a powerful stress testing witho
  - run 'start.bat' or manually run 'main.py'
 
 #How does it work
-autoRepl uses [https://repl.it]repl.it to create an unlimited number of bots which can all flood an IP address through a udp request. It can automatically create a repl from your github fork of this repo and start flooding.
+autoRepl uses [repl.it](https://repl.it) to create an unlimited number of bots which can all flood an IP address through a udp request. It can automatically create a repl from your github fork of this repo and start flooding.
