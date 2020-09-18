@@ -5,7 +5,7 @@ from time import sleep
 chrome_options = Options()
 chrome_options.add_argument("--window-size=1,1")
 browser = webdriver.Chrome(options=chrome_options)
-browser.get('https://repl.it/github/vihangatheturtle/autoRepl')
+browser.get('https://repl.it/github/YOUR_GITHUB_USERNAME/REPO_NAME')
 
 errorpass = 75
 loadtext = 1
