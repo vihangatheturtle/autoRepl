@@ -8,5 +8,5 @@ autoRepl uses [repl.it](https://repl.it) to create a powerful stress testing wit
  - Make sure all prerequisites from 'requirements.txt' are installed (python 3)
  - run 'start.bat' or manually run 'main.py'
 
-#How does it work
+# How does it work
 autoRepl uses [repl.it](https://repl.it) to create an unlimited number of bots which can all flood an IP address through a udp request. It can automatically create a repl from your github fork of this repo and start flooding.
