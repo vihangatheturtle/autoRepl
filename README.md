@@ -4,7 +4,7 @@ autoRepl uses [repl.it](https://repl.it) to create a powerful stress testing wit
 # How to use
  - Fork this repo
  - Manually test it works by visiting: https://repl.it/github/YOUR_GITHUB_USERNAME/REPO_NAME, it should start cloning.
- - Replace the example url with your github fork link in the 'start.bat' file.
+ - Replace the example url with your github fork link in the 'main.py' file.
  - Replace 0.0.0.0 (IPADDR) and 80 (PORTNUM) with the target IP address and port in 'main.py'
  - Make sure all prerequisites from 'requirements.txt' are installed (python 3)
  - run 'start.bat' or manually run 'main.py'
