@@ -36,4 +36,5 @@ while True:
         totalSent = totalSent + int(len(PACKETDATA))
         refresh_count = refresh_count + 1
     except Exception as ex:
-        print(f"Excepted at: {datetime.now()} :: {type(ex)} :: Exception occured whilst trying to send UDP packet (BINARYDATA: '{PACKETDATA.decode()}',IP: '{IPADDR}', PORT: '{PORTNUM}', ERROR: '{ex}', EXCEPTION ARGS: '{ex.args}')")
+        print(f"Excepted at: {datetime.now()} :: {type(ex)} :: Exception occured whilst trying to send UDP packet (IP: '{IPADDR}', PORT: '{PORTNUM}', ERROR: '{ex}', EXCEPTION ARGS: '{ex.args}')")
+        time.sleep(2)
